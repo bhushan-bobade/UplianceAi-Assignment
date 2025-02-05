@@ -64,6 +64,7 @@ const Login = ({setIsLogin,handleSignInWithGoogle}) => {
       }
     }
 
+    //Sign In Function
     return (
         <div className="bg-gray-600 rounded-2xl shadow-2xl flex flex-col w-full md:w-1/3 items-center max-w-4xl transition duration-1000 ease-out">
           <h3 className="text-xl font-semibold text-white font-sans pt-2">Sign In</h3>
