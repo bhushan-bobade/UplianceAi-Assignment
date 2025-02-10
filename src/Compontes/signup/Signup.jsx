@@ -1,7 +1,5 @@
-import React, { useState } from "react";
-// import {Facebook,GitHub,Google} from '@mui/icons-material'
-import { FaFacebook } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import { useState } from "react";
+// import {Google} from '@mui/icons-material';
 import { FaGoogle } from "react-icons/fa";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../fireBase/config";
