@@ -5,12 +5,12 @@ import { getAuth } from "firebase/auth";
 
 // Web App's Firebase Configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyA_gVQRpr1lOzXlGtaFf6V-h45bwkL9TT4",
-  authDomain: "upliance-12ac4.firebaseapp.com",
-  projectId: "upliance-project-57b36",
-  storageBucket: "upliance-project-57b36.appspot.com",
-  messagingSenderId: "417061680349",
-  appId: "1:417061680349:web:f6d13cdfe2df6259011734"
+  apiKey: "AIzaSyBoYqf31Uk_t_SD9OUUIkLqNs_Xzsva1No",
+  authDomain: "upliance-project-51a37.firebaseapp.com",
+  projectId: "upliance-project-51a37",
+  storageBucket: "upliance-project-51a37.firebasestorage.app",
+  messagingSenderId: "179089076255",
+  appId: "1:179089076255:web:dee1c5c507825a9905652a"
 };
 
 // Initialize Firebase Config

@@ -60,7 +60,7 @@ const Counter = () => {
         backgroundColor: (context) => {
           const ctx = context.chart.ctx
           const gradient = ctx.createLinearGradient(0, 0, 0, 400)
-          gradient.addColorStop(0, "rgba(34, 211, 238, 0.6)") // Cyan
+          gradient.addColorStop(0, "rgba(34, 211, 238, 0.6)") 
           gradient.addColorStop(1, "rgba(34, 211, 238, 0.1)")
           return gradient
         },
