@@ -10,7 +10,7 @@ ChartJS.register(LineElement, CategoryScale, LinearScale, PointElement, Tooltip,
 
 const Counter = () => {
   const [count, setCount] = useState(0)
-  const [bgColor, setBgColor] = useState("rgba(255, 255, 255, 1)")
+  const [bgColor, setBgColor] = useState("rgba(255, 255, 255, 1)") //Default White Color
   const [chartData, setChartData] = useState([0])
 
   const updateBackgroundColor = (newCount) => {
@@ -18,7 +18,7 @@ const Counter = () => {
     const intensity = Math.min(1, Math.abs(newCount) / maxCount)
 
     // Only positive transitions now since we're preventing negative numbers
-    const r = Math.round(255 * (1 - intensity))
+    const r = Math.round(255 * (1 - intensity)) //As counter increases Bg color darkens
     const g = Math.round(255 * (1 - 0.3 * intensity))
     const b = Math.round(255 * (1 - 0.5 * intensity))
     setBgColor(`rgba(${r}, ${g}, ${b}, 1)`)
@@ -29,10 +29,10 @@ const Counter = () => {
   }
 
   const handlePlusClick = () => {
-    const newCount = count + 1
+    const newCount = count + 1 //Initial Count is 1
     setCount(newCount)
-    updateBackgroundColor(newCount)
-    updateChartData(newCount)
+    updateBackgroundColor(newCount) //Updates bg color
+    updateChartData(newCount) //Add new count to CharData for Visualizing
   }
 
   const handleMinusClick = () => {
@@ -47,8 +47,8 @@ const Counter = () => {
 
   const handleResetClick = () => {
     setCount(0)
-    setBgColor("rgba(255, 255, 255, 1)")
-    setChartData([0])
+    setBgColor("rgba(255, 255, 255, 1)") //Default White Color
+    setChartData([0]) //Initial State
   }
 
   const chartConfig = {

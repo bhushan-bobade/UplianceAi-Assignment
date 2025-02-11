@@ -1,12 +1,11 @@
-import React, { useState } from "react";
-import { FaFacebook } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import { useState } from "react";
 import { FaGoogle } from "react-icons/fa";
 import { auth } from "../../fireBase/config";
 
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+
 const Login = ({setIsLogin,handleSignInWithGoogle}) => {
     const [loginEmail, setLoginEmail] = useState("");
     const [loginPassword, setLoginPassword] = useState("");
